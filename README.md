@@ -21,25 +21,26 @@ This project aims to predict rainfall based on weather data using machine learni
 
 **Importing Libraries:**
 
-Libraries like pandas, numpy, matplotlib, and seaborn are used for data manipulation and visualization.
+               Libraries like pandas, numpy, matplotlib, and seaborn are used for data manipulation and visualization.
 
-MLflow is used for tracking experiments and managing the machine learning pipeline.
+               MLflow is used for tracking experiments and managing the machine learning pipeline.
 
 **Dataset Overview:**
 
-The dataset contains weather features such as:
+              The dataset contains weather features such as:
 
-pressure, maxtemp, temperature, mintemp, dewpoint, humidity, cloud, rainfall, sunshine, winddirection, and windspeed.
+              pressure, maxtemp, temperature, mintemp, dewpoint, humidity, cloud, rainfall, sunshine, winddirection, and windspeed.
 
-Example row:
+              Example row:
 
-pressure: 1025.9, maxtemp: 19.9, rainfall: yes, windspeed: 26.3
+          pressure: 1025.9, maxtemp: 19.9, rainfall: yes, windspeed: 26.3
 
 **Data Preprocessing:**
 
-Steps for cleaning, feature engineering, and handling missing values are performed.
+         Steps for cleaning, feature engineering, and handling missing values are performed.
 
 **Exploratory Data Analysis (EDA):**
+
      Visualizations and statistical summaries help understand the data distribution and relationships.
 
 **Model Training:**
@@ -132,7 +133,8 @@ Steps for cleaning, feature engineering, and handling missing values are perform
 5.Open your browser and go to http://127.0.0.1:8080 to use the application.
 
 **Project Structure**
-.
+
+
 ├── Rainfall.csv                # Dataset file
 
 ├── app.py                      # Flask application
