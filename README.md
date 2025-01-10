@@ -6,13 +6,14 @@ This project aims to predict rainfall based on weather data using machine learni
 
 **Features**
 
-Data Analysis: Analyze and visualize weather features like pressure, humidity, and windspeed.
+**Data Analysis:** Analyze and visualize weather features like pressure, humidity, and windspeed.
 
-Machine Learning: Train and deploy a model to predict rainfall.
+**Machine Learning:** Train and deploy a model to predict rainfall.
 
-Model Management: Use MLflow for tracking experiments and managing the production model.
+**Model Management:** Use MLflow for tracking experiments and managing the production model.
 
-Web Application: Provide a user-friendly interface for inputting weather data and getting predictions.
+**Web Application:** Provide a user-friendly interface for inputting weather data and getting predictions.
+
 
 **Project Report**
 
@@ -62,30 +63,45 @@ Steps for cleaning, feature engineering, and handling missing values are perform
 **Workflow**
 
 **1.Data Preparation**
+
     Load and preprocess weather data from Rainfall.csv.
+    
     Handle missing values and ensure data quality.
     
 **2.Exploratory Data Analysis (EDA)**
     Visualize relationships between weather features.
+    
     Identify patterns and trends in rainfall data.
     
 **3.Model Training**
     Train a machine learning model using features such as:
+    
     Pressure
+    
     Dewpoint
+    
     Humidity
+    
     Cloud cover
+    
     Sunshine
+    
     Wind direction
+    
     Wind speed
+    
     Evaluate model performance using metrics like accuracy and recall.
 
 **4.Model Deployment**
+
     Track the trained model and its metrics using MLflow.
+    
     Deploy the model as a production-ready artifact.
     
 **5.Web Interface**
+
     Use a Flask app to provide a form for entering weather data.
+    
     Display predictions ("Rainfall" or "No Rainfall") dynamically based on the model's output.
 
 **Installation**
@@ -96,16 +112,21 @@ Steps for cleaning, feature engineering, and handling missing values are perform
 **Setup**
 
 1.Clone this repository:
+
       git clone https://github.com/yourusername/rainfall-prediction.git
+      
       cd rainfall-prediction
       
 2.Install dependencies:
+
       pip install -r requirements.txt
       
 3.Run the MLflow server locally:
+
       mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 0.0.0.0 --port 5000
       
 4.Start the Flask app:
+
       python app.py
       
 5.Open your browser and go to http://127.0.0.1:8080 to use the application.
@@ -113,10 +134,15 @@ Steps for cleaning, feature engineering, and handling missing values are perform
 **Project Structure**
 .
 ├── Rainfall.csv                # Dataset file
+
 ├── app.py                      # Flask application
+
 ├── index.html                  # HTML template for web UI
+
 ├── Rainfall Prediction.ipynb   # Jupyter Notebook for analysis and model training
+
 ├── requirements.txt            # Python dependencies
+
 └── README.md                   # Project documentation
 
 **Conclusion**
